@@ -1,0 +1,44 @@
+body {
+	font-family: Inter, sans-serif;
+	background: #FFF9F0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100vh;
+	margin: 0;
+	position: relative;
+}
+
+h2 {
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	max-width: 600px;
+	overflow-y: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	padding: 20px 0 100px;
+	align-items: center;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}
+
+@media (width <= 320px) {
+	.frame {
+		width: 100%;
+		height: auto;
+	}
+
+	.frame-content {
+		width: 90%;
+		left: 5%;
+		top: 20px;
+	}
+}
